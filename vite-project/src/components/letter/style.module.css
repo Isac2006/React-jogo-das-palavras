@@ -1,0 +1,43 @@
+.letterBox {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+
+  background-color: #ffffff;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111827;
+
+  transition: all 0.2s ease;
+}
+
+/* Quando tiver letra */
+.filled {
+  border-color: #6366f1;
+  background-color: #eef2ff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .letterBox {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .letterBox {
+    width: 42px;
+    height: 42px;
+    font-size: 1.3rem;
+  }
+}
