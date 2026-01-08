@@ -1,0 +1,22 @@
+
+
+:root{
+  font-size: 16px;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+}
+button{
+  cursor: pointer;
+ transition: filtrer(0.2);
+}
+button :hover{
+  filter: brightness(0.9);
+}
