@@ -1,33 +1,41 @@
-.letterBox {
+.input {
+  /* Quadrado Perfeito */
   width: 56px;
   height: 56px;
-
+  
+  /* Alinhamento da Letra */
   display: flex;
+  text-align: center; /* Centraliza a letra horizontalmente */
   align-items: center;
   justify-content: center;
 
+  /* Estilo Visual (Igual ao seu letterBox) */
   border: 2px solid #d1d5db;
   border-radius: 8px;
-
   background-color: #ffffff;
 
+  /* Tipografia */
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #111827;
 
+  /* Suavidade e Cursor */
   transition: all 0.2s ease;
+  outline: none;
+  caret-color: #6366f1; /* Cor do "pauzinho" de digitação */
 }
 
-/* Quando tiver letra */
-.filled {
+/* Quando o usuário clica para digitar */
+.input:focus {
   border-color: #6366f1;
   background-color: #eef2ff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
-/* Responsivo */
+/* Responsividade (seguindo seu padrão) */
 @media (max-width: 768px) {
-  .letterBox {
+  .input {
     width: 48px;
     height: 48px;
     font-size: 1.5rem;
@@ -35,17 +43,9 @@
 }
 
 @media (max-width: 480px) {
-  .letterBox {
+  .input {
     width: 42px;
     height: 42px;
     font-size: 1.3rem;
   }
-}
-
-
-.letterCorrect{
-  background-color: green;
-}
-.letterWrong{
-  background-color: yellow;
 }

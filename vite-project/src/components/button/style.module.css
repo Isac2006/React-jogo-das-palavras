@@ -1,0 +1,49 @@
+.button {
+  /* Tamanho e Layout */
+  width: 100%;
+  max-width: 200px;
+  height: 56px; /* Mesma altura dos inputs para alinhar bem */
+  
+  /* Tipografia */
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Cores (Usando o roxo principal do seu projeto) */
+  background-color: #6366f1;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  
+  /* Interação */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  /* Alinhamento interno */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Efeito ao passar o mouse */
+.button:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px); /* Sobe levemente */
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* Efeito ao clicar */
+.button:active {
+  transform: translateY(0); /* Volta ao lugar */
+  background-color: #4338ca;
+}
+
+/* Quando o botão estiver desabilitado (ex: enquanto não preencheu tudo) */
+.button:disabled {
+  background-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

@@ -1,0 +1,45 @@
+.LettersUsed {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9fafb; /* Fundo bem clarinho */
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.LettersUsed h5 {
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Caso você queira renderizar as letras dentro de um container */
+.letterList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Estilo para cada letrinha usada */
+.usedLetter {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
